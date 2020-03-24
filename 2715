@@ -1,0 +1,35 @@
+while True:
+    try:
+        n = int(input())
+        i = 0
+        vetor = [int(x) for x in input().split()]
+        vetor_a = []
+        while i < n:
+            vetor_a.append(int(vetor[i]))
+            i = i + 1
+        i = 1
+        if 0 != n - 1:
+            a = vetor_a[0]
+            b = vetor_a[n - 1]
+        else:
+            a = vetor_a[0]
+            b = 0
+
+        while i < n:
+            if i == n - 1:
+                break
+            elif a <= b:
+                a = a + vetor_a[i]
+                i = i + 1
+            elif a > b:
+                b = b + vetor_a[n - 2]
+                n = n - 1
+        if a > b:
+            total = a - b
+        elif b > a:
+            total = b - a
+        else:
+            total = a - b
+        print(total)
+    except EOFError:
+        break

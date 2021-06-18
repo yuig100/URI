@@ -1,0 +1,16 @@
+a = 0
+b = 1
+c = 1
+d = int(input(''))
+if (d > 0 and d < 47):
+    if (d == 1):
+        print('0\n')
+    else:
+        print('{}'.format(0),end = ' ')
+        for i in range(d - 2):
+            print('{}'.format(c),end = ' ')
+            c = a + b
+            a = b
+            b = c
+        print('{}'.format(c),end = '')
+print('')

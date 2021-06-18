@@ -1,0 +1,7 @@
+n_fun = int(input())
+horas = int(input())
+valor = round(float(input()),2)
+salario = horas * valor
+
+print('NUMBER =',n_fun)
+print('SALARY = U$ {:.2f}'.format(salario))

@@ -1,4 +1,4 @@
-od1,num1,val1 = input().split(' ')
+cod1,num1,val1 = input().split(' ')
 cod2,num2,val2 = input().split(' ')
 
 c1 = int(cod1)

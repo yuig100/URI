@@ -1,0 +1,13 @@
+x = round(float(input()),2)
+y = round(float(input()),2)
+z = round(float(input()),2)
+
+peso1 = 2
+
+peso2 = 3
+
+peso3 = 5
+
+media = ((x * peso1) + (y * peso2) + (z * peso3)) / (peso1 + peso2 + peso3)
+
+print('MEDIA = {:.1f}'.format(media))

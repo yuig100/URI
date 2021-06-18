@@ -1,0 +1,9 @@
+n = 3.14159
+
+raio = round(float(input()),2)
+
+area = n * raio * raio
+
+area_round = round(area,4)
+
+print('A={:.4f}'.format(area))

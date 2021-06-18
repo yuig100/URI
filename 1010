@@ -1,0 +1,13 @@
+od1,num1,val1 = input().split(' ')
+cod2,num2,val2 = input().split(' ')
+
+c1 = int(cod1)
+c2 = int(cod2)
+n1 = int(num1)
+n2 = int(num2)
+v1 = float(val1)
+v2 = float(val2)
+
+total = (n1 * v1) + (n2 * v2)
+
+print('VALOR A PAGAR: R$ {:.2f}'.format(total))

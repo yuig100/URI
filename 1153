@@ -1,0 +1,7 @@
+num = int(input())
+total=1
+if(num < 13 and num >0):
+    while (num > 0):
+        total = total * num
+        num = num - 1
+    print(total)
